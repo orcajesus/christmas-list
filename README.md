@@ -13,3 +13,4 @@ mySherk.myShowHP()
 //alert(this.hP)
 }">
 
+<div id="myDiv01">....</div>
