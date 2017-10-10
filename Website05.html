@@ -1,0 +1,39 @@
+
+<script>
+  function myStudent(myAge, myName, myImage){
+   this.myStudentAge=myAge
+   this.myStudentName=myName
+   this.myStudentImage=myImage
+this.myShowInfo=function(){
+   document.getElementById('myDiv01').innerHTML +='My name is' + this.myStudentName + ' <br>'
+ };
+}
+
+</script>
+
+<input type=button value="Set Fred" onClick="{ 
+ 	myFred = new myStudent(20, 'fred','https://www.google.ca')
+}"><br>
+<input type=button value="Show Fred" onClick="{
+	myFred.myShowInfo()
+}">
+<br>
+<input type=button value="Set and Show Mary" onClick="{ 
+myMary=new myStudent(18, 'Mary','https://www.google.ca')
+myMary.myShowInfo()
+}".<br>
+<div id="myDiv01">....<br></div>
+
+<script>
+function myOb(x){
+this.myx=x*2
+this.myFun=function(){ 
+Outputting this.myx
+}
+myNumber=new myOb(12)
+
+
+:(
+
+myNumber.myFun()
+</scriopt>

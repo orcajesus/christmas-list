@@ -1,0 +1,40 @@
+<h2 alig=center> java script by logan </h2>
+<form>
+Enter your name: <input id="myText01" type=text value=fred>
+<input type=button value="click me" onclick="{
+
+// alert(document.all.myText01.value)
+ 
+ //alert(document.getElementById('myText01').value)
+ 
+ document.getElementById('myDiv01').innerHTML=(document.getElementById('myText01').value)
+ document.getElementById('myDiv01').style.color='pink'
+
+
+
+ }">
+ <br><br>
+
+
+Number: <input type=number id="num1" value="0"><br>
+<input type=button value="button"
+
+
+onclick="{document.getElementById('myDiv01').innerHTML=document.getElementById('num1').value * document.getElementById('num1').value 
+
+document.getElementById('myDiv01').innerHTML=(document.getElementById('num1').value)
+document.getElementById('myDiv01').style.color='red'
+
+}">
+</form>
+<form>
+enter how you're feeling <input id="myText02" type=text placeholder="Ed Sheeran">
+
+<div id="myDiv02" style="font-size:40px;color:red;">your emotions will be here</div>
+<input type=button value="Then Click here" onClick="{ document.getElementById('myDiv02').innerHTML = 'so you are feeling ' +document.getElementById('myText02').value + '?'}"
+//if (document.getElementById('myText01').value == '0') {alert('enter a feeling')} 
+// else {
+//}" 
+>
+
+</form>
