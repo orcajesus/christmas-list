@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+T1AO8-Easy-Objects-Logan
+</title>
+</head>
+<body>
+<center><b> T1A08-Easy-Objects-Logan</b> </center> <br>
+<br>
+
+<script>
+
+function myOb(x){
+ this.myX = x * 5;
+ this.myFun = function(){
+   document.getElementById('myDiv').innerHTML =
+   'The Property <b>this.myX</b> = '+this.myX +', but the passed variable <b>x</b>='+ x
+  }
+}
+</script>
+
+<input type=button value=click onClick="{
+  myObject= new myOb(4)
+  myObject.myFun()
+}">
+
+<div id="myDiv">...</div>  
