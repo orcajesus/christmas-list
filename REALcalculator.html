@@ -1,0 +1,126 @@
+<h2 align=center>Calculator By Logan™ <h2>
+
+<input id="myText01"  type=text value="3"  > 
+<input id="myText02"  type=text value=""  > 
+<input id="myText03"  type=text value="4"  > <br>
+
+
+<input type="button" value="1" onclick="{
+
+if (document.getElementById('myText02').value == ''){
+					document.getElementById('myText01').value += 1 * 1}
+else{
+document.getElementById('myText03').value += 1 * 1
+}
+}">
+
+<input type="button" value="2" onclick="{
+
+if (document.getElementById('myText02').value == ''){
+					document.getElementById('myText01').value += 2 * 1}
+else{
+document.getElementById('myText03').value += 2 * 1
+}
+}">
+
+<input type="button" value="3" onclick="{
+
+if (document.getElementById('myText02').value == ''){
+					document.getElementById('myText01').value += 3 * 1}
+else{
+document.getElementById('myText03').value += 3 * 1
+}
+}">
+<br>
+<input type="button" value="4" onclick="{
+
+if (document.getElementById('myText02').value == ''){
+					document.getElementById('myText01').value += 4 * 1}
+else{
+document.getElementById('myText03').value += 4 * 1
+}
+}">
+
+<input type="button" value="5" onclick="{
+if (document.getElementById('myText02').value == ''){
+					document.getElementById('myText01').value += 5 * 1}
+else{
+document.getElementById('myText03').value += 5 * 1
+}
+}">
+
+<input type="button" value="6" onclick="{
+if (document.getElementById('myText02').value == ''){
+					document.getElementById('myText01').value += 6 * 1}
+else{
+document.getElementById('myText03').value += 6 * 1
+}
+}">
+<br>
+<input type="button" value="7" onclick="{
+if (document.getElementById('myText02').value == ''){
+					document.getElementById('myText01').value += 7 * 1}
+else{
+document.getElementById('myText03').value += 7 * 1
+}
+}">
+
+<input type="button" value="8" onclick="{
+if (document.getElementById('myText02').value == ''){
+					document.getElementById('myText01').value += 8 * 1}
+else{
+document.getElementById('myText03').value += 8 * 1
+}
+}">
+
+<input type="button" value="9" onclick="{
+if (document.getElementById('myText02').value == ''){
+					document.getElementById('myText01').value += 9 * 1}
+else{
+document.getElementById('myText03').value += 9 * 1
+}
+}">
+<br>
+
+<input type="button" value="0" style="visibility:hidden;">
+<input type="button" value="0" onclick="{
+if (document.getElementById('myText02').value == ''){
+					document.getElementById('myText01').value += 0 * 1}
+else{
+document.getElementById('myText03').value += 0 * 1
+}
+}">
+<br>
+<input type="button" id="myAdd" value="+"
+		  onclick="{
+			
+			    document.getElementById('myText02').value = '+'
+						  
+		  }">
+
+
+
+
+
+
+<input type=button value="=" onClick="{  
+   myNum1 = parseFloat(document.getElementById('myText01').value)
+   //mySign = document.getElementById('myText02').value
+   myNum2 = parseFloat(document.getElementById('myText03').value)
+   
+      //if(mySign == '+'){
+      document.getElementById('myDiv01').innerHTML =  myNum1 + myNum2
+	  
+	
+
+
+}" >
+
+
+
+<input type=button value="Clear Output" onClick="{  
+      document.getElementById('myDiv01').innerHTML =  '' 
+}">
+
+<div id="myDiv01">...<br></div>
+	
